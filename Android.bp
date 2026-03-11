@@ -8133,34 +8133,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dump_pixel_metrics",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dump/dump_pixel_metrics",
-            ],
-            shared_libs: [
-                "libbase",
-                "libdump",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "dump",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dump_power",
     owner: "google",
     target: {

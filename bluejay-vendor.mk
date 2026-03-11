@@ -2026,7 +2026,7 @@ PRODUCT_PACKAGES += \
     dump_gsc \
     dump_modemlog \
     dump_perf \
-    dump_pixel_metrics \
+     \
     dump_power \
     dump_sensors \
     dump_soc \
